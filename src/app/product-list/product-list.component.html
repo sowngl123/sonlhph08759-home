@@ -2,10 +2,10 @@
 <div class="row">
 <div ngClass="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="https://i.imgur.com/j0YKNCo.jpg" alt=""></a>
+            <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Tên Nhà: </a>
+                    <a href="#">Tên Nhà: {{product.name}}</a>
                 </h4>
                 <h6>Giá Phòng: $</h6>
                 <p class="card-text">Loại Phòng: </p>
