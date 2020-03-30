@@ -2,7 +2,7 @@
 <div class="row">
 <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
         <div class="card h-100">
-            <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+            <a href="#"><img class="card-img-top" [src]="product.img" alt="" height="150px"></a>
             <div class="card-body">
                 <h4 class="card-title">
                     <a href="#">Tên Nhà: {{product.name}}</a>
@@ -10,7 +10,7 @@
                 <h6>Giá Phòng: $ {{product.price}}</h6>
                 <p class="card-text">Loại Phòng: {{product.type}}</p>
                 <p class="card-text">Địa Chỉ: {{product.desc}}</p>
-                <p class="card-text">Trạng Thái: {{product.status ? 'Còn Phòng' : 'Hết Phòng'}}</p>
+                <p class="card-text">Trạng Thái: {{product.status ? 'Hết Phòng' : 'Còn Phòng'}}</p>
             </div>
             <button>Đặt Phòng</button>
         </div>
