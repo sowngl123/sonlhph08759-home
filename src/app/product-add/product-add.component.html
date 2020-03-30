@@ -1,0 +1,13 @@
+<br>
+<form class="w-50 mx-auto mt-3">
+    <div class="form-group">
+      <label for="">  Treo Phòng</label>
+      <input type="text" name="name" class="form-control"placeholder="Tên Nhà" [(ngModel)]="product.name">
+      <input type="text" name="price" class="form-control"placeholder="Giá Phòng" [(ngModel)]="product.price">
+      <input type="text" name="type" class="form-control"placeholder="Kiểu Phòng" [(ngModel)]="product.desc">
+      <input type="text" name="desc" class="form-control"placeholder="Địa Chỉ" [(ngModel)]="product.desc">
+      <input type="text" name="img" class="form-control"placeholder="Hình Ảnh" [(ngModel)]="product.desc">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="addProduct()">Submit</button>
+</form>
+<br>
