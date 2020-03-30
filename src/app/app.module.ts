@@ -15,6 +15,7 @@ import { ProductAddComponent } from "./product-add/product-add.component";
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
 import { ProductEditComponent } from "./product-edit/product-edit.component";
 import { ProuctDeleteComponent } from "./prouct-delete/prouct-delete.component";
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -30,7 +31,8 @@ import { ProuctDeleteComponent } from "./prouct-delete/prouct-delete.component";
     ProductAddComponent,
     ProductDetailComponent,
     ProductEditComponent,
-    ProuctDeleteComponent
+    ProuctDeleteComponent,
+    ProductListComponent
   ],
   bootstrap: [AppComponent]
 })
