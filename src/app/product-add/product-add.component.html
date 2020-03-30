@@ -1,14 +1,20 @@
 <br>
+<h2>Thêm Phòng Mới</h2>
 <form class="w-50 mx-auto mt-3">
     <div class="form-group">
-      <label for="">  Treo Phòng</label>
-      <input type="text" name="name" class="form-control"placeholder="Tên Nhà" [(ngModel)]="product.name">
-      <input type="text" name="price" class="form-control"placeholder="Giá Phòng" [(ngModel)]="product.price">
-      <input type="text" name="type" class="form-control"placeholder="Kiểu Phòng" [(ngModel)]="product.type">
-      <input type="text" name="desc" class="form-control"placeholder="Địa Chỉ" [(ngModel)]="product.desc">
-      <input type="text" name="img" class="form-control"placeholder="Link Ảnh" [(ngModel)]="product.img">
-      <input hidden value="true" type="text" name="status" class="form-control"placeholder="Kiểu" [(ngModel)]="product.status">
+      <label>Tên Nhà</label>
+      <input type="text" name="name" class="form-control"placeholder="Nhà Trắng" [(ngModel)]="product.name">
+      <label>Giá Phòng</label>
+      <input type="text" name="price" class="form-control"placeholder="12345" [(ngModel)]="product.price">
+      <label>Kiểu Phòng</label>
+      <input type="text" name="type" class="form-control"placeholder="Phòng Nhiều Người ở" [(ngModel)]="product.type">
+      <label>Địa Chỉ</label>
+      <input type="text" name="desc" class="form-control"placeholder="Hà Nội" [(ngModel)]="product.desc">
+      <label>Link Dẫn Ảnh</label>
+      <input type="text" name="img" class="form-control"placeholder="https://i.imgur.com/9nv0Ym3.jpg" [(ngModel)]="product.img">
+      <label>Trạng Thái</label>
+      <input type="text" name="status" class="form-control"placeholder="true / false" [(ngModel)]="product.status">
     </div>
-    <button type="submit" class="btn btn-primary" (click)="addProduct()">Submit</button>
+    <button type="submit" class="btn btn-primary" (click)="addProduct()">Thêm Mới</button>
 </form>
 <br>

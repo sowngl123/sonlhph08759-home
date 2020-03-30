@@ -1,0 +1,20 @@
+<br>
+<table>
+	<tr>
+		<td width="50%">
+			<img class="card-img-top" [src]="product.img" alt="" height="250px">
+    </td>
+		<td>
+			<div class="card-body">
+				<h3 class="card-title">
+					Tên Nhà: {{product.name}}
+				</h3>
+        <p class="card-text">Giá Phòng: $ {{product.price}}</p>
+				<p class="card-text">Loại Phòng: {{product.type}}</p>
+				<p class="card-text">Địa Chỉ: {{product.desc}}</p>
+				<p class="card-text">Trạng Thái: {{product.status ? 'Hết Phòng' : 'Còn Phòng'}}</p>
+			</div>
+		</td>
+	</tr>
+</table>
+<br>

@@ -1,0 +1,39 @@
+<br>
+<h2>Thông Tin Chi Tiết</h2>
+<table>
+	<tr>
+		<td width="50%">
+			<img class="card-img-top" [src]="product.img" alt="" height="250px">
+    </td>
+		<td>
+			<div class="card-body">
+				<h3 class="card-title">
+					Tên Nhà: {{product.name}}
+				</h3>
+        <p class="card-text">Giá Phòng: $ {{product.price}}</p>
+				<p class="card-text">Loại Phòng: {{product.type}}</p>
+				<p class="card-text">Địa Chỉ: {{product.desc}}</p>
+				<p class="card-text">Trạng Thái: {{product.status ? 'Hết Phòng' : 'Còn Phòng'}}</p>
+			</div>
+		</td>
+	</tr>
+</table>
+<br>
+<h2>Chỉnh Sửa Thông Tin</h2>
+<form class="w-50 mx-auto mt-3" *ngIf="product">
+  <div class="form-group">
+      <label>Tên Nhà</label>
+      <input type="text" name="name" class="form-control"placeholder="Nhà Trắng" [(ngModel)]="product.name">
+      <label>Giá Phòng</label>
+      <input type="text" name="price" class="form-control"placeholder="12345" [(ngModel)]="product.price">
+      <label>Kiểu Phòng</label>
+      <input type="text" name="type" class="form-control"placeholder="Phòng Nhiều Người ở" [(ngModel)]="product.type">
+      <label>Địa Chỉ</label>
+      <input type="text" name="desc" class="form-control"placeholder="Hà Nội" [(ngModel)]="product.desc">
+      <label>Link Dẫn Ảnh</label>
+      <input type="text" name="img" class="form-control"placeholder="https://i.imgur.com/9nv0Ym3.jpg" [(ngModel)]="product.img">
+      <label>Trạng Thái</label>
+      <input type="text" name="status" class="form-control"placeholder="true / false" [(ngModel)]="product.status">
+    </div>
+  <button type="submit" class="btn btn-primary" (click)="updateProduct()">Chỉnh Sửa</button>
+</form>
