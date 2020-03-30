@@ -7,6 +7,7 @@
       <input type="text" name="type" class="form-control"placeholder="Kiểu Phòng" [(ngModel)]="product.desc">
       <input type="text" name="desc" class="form-control"placeholder="Địa Chỉ" [(ngModel)]="product.desc">
       <input type="text" name="img" class="form-control"placeholder="Hình Ảnh" [(ngModel)]="product.desc">
+      <input hidden value="true" type="text" name="status" class="form-control"placeholder="Kiểu" [(ngModel)]="product.desc">
     </div>
     <button type="submit" class="btn btn-primary" (click)="addProduct()">Submit</button>
 </form>
