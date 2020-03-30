@@ -16,9 +16,15 @@ import { ProductDetailComponent } from "./product-detail/product-detail.componen
 import { ProductEditComponent } from "./product-edit/product-edit.component";
 import { ProuctDeleteComponent } from "./prouct-delete/prouct-delete.component";
 import { ProductListComponent } from './product-list/product-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
+  ],
   declarations: [
     AppComponent,
     HelloComponent,
