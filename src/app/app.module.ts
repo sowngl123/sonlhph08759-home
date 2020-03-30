@@ -40,6 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProuctDeleteComponent,
     ProductListComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule {}
