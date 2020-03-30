@@ -1,12 +1,24 @@
 <table width="100%" border="1">
-  <tr>
-    <td width="30%">Hình ảnh</td>
-    <td width="60%">Thông tin</td>
-    <td width="10%">Trạng thái</td>
+  <tr> 
+    <td>Tên Nhà</td>
+    <td>Giá</td>
+    <td>Kiểu Phòng</td>
+    <td>Địa Chỉ</td>
+    <td>Link Ảnh</td>
+    <td>Trạng Thái</td>
+    <td>Công Vụ</td>
   </tr>
-  <tr>
-    <td>Hình ảnh</td>
-    <td>Thông tin</td>
-    <td>Trạng thái</td>
+  <tr *ngFor="let product of products">
+    <td>{{product.name}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.type}}</td>
+    <td>{{product.desc}}</td>
+    <td>{{product.img}}</td>
+    <td>{{product.status}}</td>
+    <td>
+      <button class="btn btn-primary" (click)='removeItem(product.id)'>Delete</button> 
+      <button class="btn btn-primary" routerLink="/product/{{product.id}}">Detail</button> 
+      <button class="btn btn-primary" routerLink="/product/edit/{{product.id}}">Edit</button> 
+    </td>
   </tr>
 </table>
