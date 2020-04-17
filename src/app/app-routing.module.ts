@@ -27,7 +27,8 @@ const routes: Routes = [
   {path: 'manager', component: ManagerComponent},
   {path: 'admin', component: AdminComponent
     children: [
-      { path: '', redirectTo: 'home', pathMatch: 'full'},
+      { path: '', redirectTo: 'manager', pathMatch: 'full'},
+      {path: 'manager', component: ManagerComponent}
     ]
   },
   {path: '**', component: NotFoundComponent}
