@@ -20,17 +20,17 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'building', component: BuildingComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'add-product', component: ProductAddComponent},
   {path: 'list-product', component: ProductListComponent},
   {path: 'product/:productID', component: ProductDetailComponent},
   {path: 'product/edit/:productID', component: ProductEditComponent},
-  {path: 'manager', component: ManagerComponent},
-  {path: 'admin', component: AdminComponent
-    children: [
-      { path: '', redirectTo: 'manager', pathMatch: 'full'},
-      { path: 'manager', component: ManagerComponent}
-    ]
-  },
+  
+  { path: 'admin', component: AdminComponent, 
+      children: [
+        { path: '', redirectTo: 'manager', pathMatch: 'full'},
+        { path: 'manager', component: ManagerComponent},
+        { path: 'add-product', component: ProductAddComponent},
+      ]
+    },
   {path: '**', component: NotFoundComponent}
 ];
 
