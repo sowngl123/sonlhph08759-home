@@ -23,7 +23,6 @@ const routes: Routes = [
   {path: 'list-product', component: ProductListComponent},
   {path: 'product/:productID', component: ProductDetailComponent},
   {path: 'product/edit/:productID', component: ProductEditComponent},
-  
   { path: 'admin', component: AdminComponent, 
       children: [
         { path: '', redirectTo: 'manager', pathMatch: 'full'},
