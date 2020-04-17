@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { ProductAddComponent } from './product-add/product-add.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ManagerComponent } from './manager/manager.component';
@@ -10,6 +11,7 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { AboutComponent } from './about/about.component';
 import { BuildingComponent } from './building/building.component';
 import { ContactComponent } from './contact/contact.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 const routes: Routes = [
@@ -23,6 +25,11 @@ const routes: Routes = [
   {path: 'product/:productID', component: ProductDetailComponent},
   {path: 'product/edit/:productID', component: ProductEditComponent},
   {path: 'manager', component: ManagerComponent},
+  {path: 'admin', component: AdminComponent
+    children: [
+      { path: '', redirectTo: 'home', pathMatch: 'full'},
+    ]
+  },
   {path: '**', component: NotFoundComponent}
 ];
 
