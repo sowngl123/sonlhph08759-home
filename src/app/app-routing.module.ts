@@ -13,15 +13,16 @@ import { BuildingComponent } from './building/building.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { PagehomeComponent } from './pagehome/pagehome.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   
-  { path: 'home', component: AdminComponent, 
+  { path: 'home', component: HomeComponent, 
       children: [
-        { path: '', redirectTo: 'home', pathMatch: 'full'},
-        {path: 'home', component: HomeComponent},
+        { path: '', redirectTo: 'pagehome', pathMatch: 'full'},
+        {path: 'pagehome', component: PagehomeComponent},
         { path: 'manager', component: ManagerComponent},
         { path: 'add-product', component: ProductAddComponent},
         {path: 'about', component: AboutComponent},
