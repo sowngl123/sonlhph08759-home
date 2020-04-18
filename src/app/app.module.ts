@@ -18,6 +18,7 @@ import { ProuctDeleteComponent } from "./prouct-delete/prouct-delete.component";
 import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminComponent } from './admin/admin.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   imports: [
@@ -40,7 +41,8 @@ import { AdminComponent } from './admin/admin.component';
     ProductEditComponent,
     ProuctDeleteComponent,
     ProductListComponent,
-    AdminComponent
+    AdminComponent,
+    DashboardComponent
   ],
   bootstrap: [
     AppComponent
