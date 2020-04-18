@@ -17,13 +17,21 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'building', component: BuildingComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'list-product', component: ProductListComponent},
-  {path: 'product/:productID', component: ProductDetailComponent},
-  {path: 'product/edit/:productID', component: ProductEditComponent},
+  
+  { path: 'home', component: AdminComponent, 
+      children: [
+        { path: '', redirectTo: 'home', pathMatch: 'full'},
+        {path: 'home', component: HomeComponent},
+        { path: 'manager', component: ManagerComponent},
+        { path: 'add-product', component: ProductAddComponent},
+        {path: 'about', component: AboutComponent},
+        {path: 'building', component: BuildingComponent},
+        {path: 'contact', component: ContactComponent},
+        {path: 'list-product', component: ProductListComponent},
+        {path: 'product/:productID', component: ProductDetailComponent},
+        {path: 'product/edit/:productID', component: ProductEditComponent},
+      ]
+    },
   { path: 'admin', component: AdminComponent, 
       children: [
         { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
