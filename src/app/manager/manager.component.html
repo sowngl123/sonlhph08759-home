@@ -1,6 +1,6 @@
 <head class="d-flex mb-3 pt-5 justify-content-between">
   <h2>Manager</h2>
-  <button routerLink='/add-product' >Add Product</button>
+  <button routerLink='/home/add-product' >Add Product</button>
 </head>
 <table width="100%" border="1">
   <tr> 
@@ -21,8 +21,8 @@
     <td>{{product.status}}</td>
     <td>
       <button class="btn btn-primary" (click)='removeItem(product.id)'>Delete</button> 
-      <button class="btn btn-primary" routerLink="/product/{{product.id}}">Detail</button> 
-      <button class="btn btn-primary" routerLink="/product/edit/{{product.id}}">Edit</button> 
+      <button class="btn btn-primary" routerLink="/home/product/{{product.id}}">Detail</button> 
+      <button class="btn btn-primary" routerLink="/home/product/edit/{{product.id}}">Edit</button> 
     </td>
   </tr>
 </table>
