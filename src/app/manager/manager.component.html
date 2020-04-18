@@ -21,8 +21,8 @@
     <td>{{product.status}}</td>
     <td>
       <button class="btn btn-primary" (click)='removeItem(product.id)'>Delete</button> 
-      <button class="btn btn-primary" routerLink="/home/product/{{product.id}}">Detail</button> 
-      <button class="btn btn-primary" routerLink="/home/product/edit/{{product.id}}">Edit</button> 
+      <button class="btn btn-primary" routerLink="/product/{{product.id}}">Detail</button> 
+      <button class="btn btn-primary" routerLink="/product/edit/{{product.id}}">Edit</button> 
     </td>
   </tr>
 </table>

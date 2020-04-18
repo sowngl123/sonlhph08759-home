@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { Data } from "../MockData";
 import { Product } from "../Product";
 import { ProductService } from "../product.service";
 import { ActivatedRoute, Router } from "@angular/router";
