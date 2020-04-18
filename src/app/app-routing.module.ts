@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { BuildingComponent } from './building/building.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path: 'product/edit/:productID', component: ProductEditComponent},
   { path: 'admin', component: AdminComponent, 
       children: [
-        { path: '', redirectTo: 'manager', pathMatch: 'full'},
+        { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+        { path: 'dashboard', component: DashboardComponent},
         { path: 'manager', component: ManagerComponent},
         { path: 'add-product', component: ProductAddComponent},
       ]
