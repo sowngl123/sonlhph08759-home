@@ -19,6 +19,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { PagehomeComponent } from './pagehome/pagehome.component';
 
 @NgModule({
   imports: [
@@ -42,7 +43,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ProuctDeleteComponent,
     ProductListComponent,
     AdminComponent,
-    DashboardComponent
+    DashboardComponent,
+    PagehomeComponent
   ],
   bootstrap: [
     AppComponent
